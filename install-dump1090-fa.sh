@@ -5,19 +5,10 @@ echo -e "\e[32mUpdating\e[39m"
 sudo apt update
 
 echo -e "\e[32mInstalling build tools\e[39m"
-sudo apt install -y git
-sudo apt install -y build-essential
-sudo apt install -y debhelper
-sudo apt install -y pkg-config
-sudo apt install -y dh-systemd
+sudo apt install -y git build-essential debhelper pkg-config dh-systemd
 
 echo -e "\e[32mInstalling dependencies \e[39m"
-sudo apt install -y librtlsdr-dev
-sudo apt install -y libncurses5-dev
-sudo apt install -y lighttpd
-sudo apt install -y libbladerf-dev
-sudo apt install -y libhackrf-dev
-sudo apt install -y liblimesuite-dev
+sudo apt install -y librtlsdr-dev libncurses5-dev lighttpd libbladerf-dev libhackrf-dev liblimesuite-dev
 
 sudo systemctl enable lighttpd
 sudo systemctl restart lighttpd

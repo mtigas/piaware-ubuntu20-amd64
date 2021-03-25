@@ -8,10 +8,7 @@ INSTALL_DIRECTORY=${PWD}
 echo -e "\e[32mUpdating\e[39m"
 sudo apt update
 echo -e "\e[32mInstalling build tools\e[39m"
-sudo apt install -y git build-essential debhelper pkg-config dh-systemd
-
-echo -e "\e[32mInstalling dependencies \e[39m"
-sudo apt install -y libsoapysdr-dev soapysdr-module-rtlsdr 
+sudo apt install -y git build-essential debhelper pkg-config dh-systemd libsoapysdr-dev soapysdr-module-rtlsdr 
 
 echo -e "\e[32mCloning dump978-fa source code\e[39m"
 
